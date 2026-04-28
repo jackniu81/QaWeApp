@@ -1,0 +1,704 @@
+{
+  "questions": [
+    {
+      "id": "js-001",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is hoisting in JavaScript?",
+      "answer": "Hoisting is JavaScript's behavior of moving declarations to the top of their scope before code execution. Variable and function declarations are hoisted, but initializations are not."
+    },
+    {
+      "id": "js-002",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "Explain the event loop in JavaScript.",
+      "answer": "The event loop continuously checks the call stack and task queue. When the call stack is empty, it moves callbacks from the task queue to the call stack for execution."
+    },
+    {
+      "id": "js-003",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the difference between 'let' and 'var'?",
+      "answer": "'var' is function-scoped and hoisted, while 'let' is block-scoped and not hoisted. 'let' is preferred in modern JavaScript."
+    },
+    {
+      "id": "js-004",
+      "category": "Closures",
+      "difficulty": "medium",
+      "question": "What is a closure in JavaScript?",
+      "answer": "A closure is a function that has access to variables from its outer scope even after the outer function has returned. It 'closes over' those variables."
+    },
+    {
+      "id": "js-005",
+      "category": "Async",
+      "difficulty": "hard",
+      "question": "What is the difference between Promise and async/await?",
+      "answer": "Promises use .then() chains, while async/await provides a cleaner syntax for handling asynchronous code. async/await is built on top of Promises."
+    },
+    {
+      "id": "js-006",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the 'this' keyword in JavaScript?",
+      "answer": "'this' refers to the object that is executing the current function. Its value depends on how the function is called (method, function, constructor, or arrow function)."
+    },
+    {
+      "id": "js-007",
+      "category": "Prototypes",
+      "difficulty": "medium",
+      "question": "What is prototype inheritance in JavaScript?",
+      "answer": "Prototype inheritance allows objects to inherit properties and methods from other objects through the prototype chain. Each object has a [[Prototype]] reference."
+    },
+    {
+      "id": "js-008",
+      "category": "DOM",
+      "difficulty": "medium",
+      "question": "What is event delegation?",
+      "answer": "Event delegation is attaching a single event listener to a parent element to handle events for its children. This improves performance and simplifies code."
+    },
+    {
+      "id": "js-009",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "Explain the difference between shallow copy and deep copy.",
+      "answer": "Shallow copy copies only the first level of properties; nested objects are still referenced. Deep copy recursively copies all levels, creating independent copies."
+    },
+    {
+      "id": "js-010",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the difference between == and ===?",
+      "answer": "== performs type coercion before comparison, while === compares both value and type without coercion. === is preferred for safety."
+    },
+    {
+      "id": "js-011",
+      "category": "Async",
+      "difficulty": "medium",
+      "question": "What is a callback function?",
+      "answer": "A callback is a function passed as an argument to another function, which is then invoked inside the outer function. Commonly used for async operations."
+    },
+    {
+      "id": "js-012",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "What is the difference between call, apply, and bind?",
+      "answer": "call() and apply() invoke a function immediately with a specific 'this' context. bind() returns a new function with a bound 'this' context without invoking it."
+    },
+    {
+      "id": "js-013",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is a template literal?",
+      "answer": "Template literals are strings enclosed in backticks (`) that allow embedded expressions using ${} syntax. They support multi-line strings and variable interpolation."
+    },
+    {
+      "id": "js-014",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is destructuring in JavaScript?",
+      "answer": "Destructuring is a convenient way to extract values from objects or arrays and assign them to variables. It simplifies code and improves readability."
+    },
+    {
+      "id": "js-015",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the spread operator?",
+      "answer": "The spread operator (...) expands an iterable (array or string) into individual elements. It's useful for copying arrays, merging objects, and passing arguments."
+    },
+    {
+      "id": "js-016",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is const in JavaScript?",
+      "answer": "const declares a block-scoped variable that cannot be reassigned. However, objects and arrays declared with const can still have their properties modified."
+    },
+    {
+      "id": "js-017",
+      "category": "Closures",
+      "difficulty": "medium",
+      "question": "What is a higher-order function?",
+      "answer": "A higher-order function is a function that takes another function as an argument or returns a function. Examples include map, filter, and reduce."
+    },
+    {
+      "id": "js-018",
+      "category": "Async",
+      "difficulty": "medium",
+      "question": "What is a Promise?",
+      "answer": "A Promise is an object that represents the eventual completion or failure of an asynchronous operation. It has three states: pending, fulfilled, and rejected."
+    },
+    {
+      "id": "js-019",
+      "category": "Async",
+      "difficulty": "medium",
+      "question": "What is async/await?",
+      "answer": "async/await is syntactic sugar for working with Promises. async functions return Promises, and await pauses execution until a Promise resolves."
+    },
+    {
+      "id": "js-020",
+      "category": "DOM",
+      "difficulty": "medium",
+      "question": "What is the DOM?",
+      "answer": "The DOM (Document Object Model) is a programming interface that represents HTML documents as a tree of objects. It allows JavaScript to interact with web pages."
+    },
+    {
+      "id": "js-021",
+      "category": "Prototypes",
+      "difficulty": "medium",
+      "question": "What is the prototype chain?",
+      "answer": "The prototype chain is the mechanism by which objects inherit properties from other objects. When a property is not found on an object, JavaScript looks up the chain."
+    },
+    {
+      "id": "js-022",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "What is currying?",
+      "answer": "Currying is a technique where a function with multiple parameters is transformed into a series of functions with single parameters. Each function returns another function."
+    },
+    {
+      "id": "js-023",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "What is memoization?",
+      "answer": "Memoization is an optimization technique that caches the results of expensive function calls. If the same arguments are provided again, the cached result is returned."
+    },
+    {
+      "id": "js-024",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "What is the difference between synchronous and asynchronous code?",
+      "answer": "Synchronous code executes line by line, blocking until each operation completes. Asynchronous code allows other operations to continue while waiting for a result."
+    },
+    {
+      "id": "js-025",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What are arrow functions?",
+      "answer": "Arrow functions are a concise syntax for writing functions using =>. They have a lexical 'this' binding and cannot be used as constructors."
+    },
+    {
+      "id": "js-026",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the difference between null and undefined?",
+      "answer": "undefined means a variable has been declared but not assigned a value. null is an assignment value that represents 'no value' and must be explicitly set."
+    },
+    {
+      "id": "js-027",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is NaN in JavaScript?",
+      "answer": "NaN stands for 'Not-a-Number' and represents an undefined or unrepresentable numerical result. typeof NaN is 'number', and NaN !== NaN is true."
+    },
+    {
+      "id": "js-028",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is truthy and falsy?",
+      "answer": "Truthy values are values that evaluate to true in a boolean context. Falsy values include: false, 0, '', null, undefined, and NaN."
+    },
+    {
+      "id": "js-029",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "What is the difference between Object.freeze and Object.seal?",
+      "answer": "Object.freeze prevents modification of existing properties and adding new properties. Object.seal allows modifying existing properties but prevents adding new ones."
+    },
+    {
+      "id": "js-030",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "What is the WeakMap in JavaScript?",
+      "answer": "WeakMap is a collection of key-value pairs where keys must be objects. Keys are weakly referenced, allowing garbage collection when no other references exist."
+    },
+    {
+      "id": "js-031",
+      "category": "Closures",
+      "difficulty": "medium",
+      "question": "What is a pure function?",
+      "answer": "A pure function always returns the same output for the same input and has no side effects. It doesn't modify external state or depend on it."
+    },
+    {
+      "id": "js-032",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is typeof operator?",
+      "answer": "typeof is an operator that returns a string indicating the type of an operand. It returns: 'string', 'number', 'boolean', 'object', 'function', 'undefined', 'symbol', 'bigint'."
+    },
+    {
+      "id": "js-033",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is instanceof operator?",
+      "answer": "instanceof checks if an object is an instance of a constructor. It returns true if the object's prototype chain contains the constructor's prototype."
+    },
+    {
+      "id": "js-034",
+      "category": "Async",
+      "difficulty": "medium",
+      "question": "What is setTimeout?",
+      "answer": "setTimeout schedules a function to execute after a specified delay in milliseconds. It returns a timeout ID that can be used to cancel the scheduled execution."
+    },
+    {
+      "id": "js-035",
+      "category": "Async",
+      "difficulty": "medium",
+      "question": "What is setInterval?",
+      "answer": "setInterval repeatedly executes a function at a specified interval in milliseconds. It returns an interval ID that can be used to stop the repetition."
+    },
+    {
+      "id": "js-036",
+      "category": "DOM",
+      "difficulty": "medium",
+      "question": "What is event bubbling?",
+      "answer": "Event bubbling is when an event triggered on a child element propagates up through its parent elements. It can be stopped using stopPropagation()."
+    },
+    {
+      "id": "js-037",
+      "category": "DOM",
+      "difficulty": "medium",
+      "question": "What is event capturing?",
+      "answer": "Event capturing is the phase where an event travels down from the root to the target element. It occurs before the bubbling phase and can be handled with addEventListener's third parameter."
+    },
+    {
+      "id": "js-038",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "What is the difference between Map and Object?",
+      "answer": "Map can have any type of key, maintains insertion order, and has a size property. Objects have string or symbol keys, don't maintain insertion order, and use length."
+    },
+    {
+      "id": "js-039",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "What is a Proxy in JavaScript?",
+      "answer": "A Proxy is an object that wraps another object and intercepts operations on it. It allows custom behavior for property access, assignment, and function calls."
+    },
+    {
+      "id": "js-040",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "What is a Reflect API?",
+      "answer": "Reflect is a built-in object that provides methods for interceptable JavaScript operations. It works alongside Proxies to provide a consistent API for meta-operations."
+    },
+    {
+      "id": "js-041",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is JSON?",
+      "answer": "JSON (JavaScript Object Notation) is a lightweight data format. JSON.stringify() converts objects to JSON strings, and JSON.parse() converts JSON strings to objects."
+    },
+    {
+      "id": "js-042",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the difference between slice and splice?",
+      "answer": "slice() returns a shallow copy of a portion of an array without modifying it. splice() modifies the original array by removing or replacing elements."
+    },
+    {
+      "id": "js-043",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the difference between map and forEach?",
+      "answer": "map() returns a new array with transformed elements. forEach() iterates over elements and doesn't return anything. Use map when you need a new array."
+    },
+    {
+      "id": "js-044",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the filter method?",
+      "answer": "filter() creates a new array with elements that pass a test. It takes a callback function that returns true for elements to include."
+    },
+    {
+      "id": "js-045",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the reduce method?",
+      "answer": "reduce() applies a function to an accumulator and each element to produce a single value. It's useful for summing, grouping, or transforming arrays."
+    },
+    {
+      "id": "js-046",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the find method?",
+      "answer": "find() returns the first element in an array that satisfies a testing function. It returns undefined if no element matches."
+    },
+    {
+      "id": "js-047",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the some method?",
+      "answer": "some() tests whether at least one element in an array passes a test. It returns true if any element matches, false otherwise."
+    },
+    {
+      "id": "js-048",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the every method?",
+      "answer": "every() tests whether all elements in an array pass a test. It returns true only if all elements match the condition."
+    },
+    {
+      "id": "js-049",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the includes method?",
+      "answer": "includes() checks if an array contains a specific element. It returns true if found, false otherwise. Works with strings too."
+    },
+    {
+      "id": "js-050",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the indexOf method?",
+      "answer": "indexOf() returns the first index of an element in an array. It returns -1 if the element is not found."
+    },
+    {
+      "id": "js-051",
+      "category": "Closures",
+      "difficulty": "medium",
+      "question": "What is a factory function?",
+      "answer": "A factory function is a function that creates and returns objects. It's an alternative to constructors and classes for object creation."
+    },
+    {
+      "id": "js-052",
+      "category": "Closures",
+      "difficulty": "medium",
+      "question": "What is a module pattern?",
+      "answer": "The module pattern uses closures to create private and public methods. It's a way to encapsulate code and avoid polluting the global scope."
+    },
+    {
+      "id": "js-053",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "What is the difference between composition and inheritance?",
+      "answer": "Inheritance creates a hierarchy where classes inherit from parent classes. Composition combines objects to create complex behaviors. Composition is often preferred."
+    },
+    {
+      "id": "js-054",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "What is the Observer pattern?",
+      "answer": "The Observer pattern defines a one-to-many relationship where multiple observers listen to a subject. When the subject changes, all observers are notified."
+    },
+    {
+      "id": "js-055",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "What is the Singleton pattern?",
+      "answer": "The Singleton pattern ensures only one instance of a class exists. It's useful for managing shared resources like database connections or loggers."
+    },
+    {
+      "id": "js-056",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is Object.keys()?",
+      "answer": "Object.keys() returns an array of an object's own enumerable property names. It doesn't include inherited properties."
+    },
+    {
+      "id": "js-057",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is Object.values()?",
+      "answer": "Object.values() returns an array of an object's own enumerable property values. It's the counterpart to Object.keys()."
+    },
+    {
+      "id": "js-058",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is Object.entries()?",
+      "answer": "Object.entries() returns an array of [key, value] pairs for an object's own enumerable properties. Useful for iterating over objects."
+    },
+    {
+      "id": "js-059",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is Object.assign()?",
+      "answer": "Object.assign() copies properties from source objects to a target object. It's useful for merging objects and creating shallow copies."
+    },
+    {
+      "id": "js-060",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the for...in loop?",
+      "answer": "for...in iterates over enumerable properties of an object, including inherited ones. It's not recommended for arrays; use for...of instead."
+    },
+    {
+      "id": "js-061",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the for...of loop?",
+      "answer": "for...of iterates over iterable objects like arrays and strings. It provides the values directly, not the indices."
+    },
+    {
+      "id": "js-062",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is a generator function?",
+      "answer": "A generator function uses function* syntax and yield keyword. It returns an iterator that can be paused and resumed."
+    },
+    {
+      "id": "js-063",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is a Symbol?",
+      "answer": "Symbol is a primitive data type that creates unique identifiers. Symbols are useful for creating private object properties and avoiding name collisions."
+    },
+    {
+      "id": "js-064",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is BigInt?",
+      "answer": "BigInt is a primitive type for representing integers larger than 2^53-1. It's created by appending 'n' to a number or using BigInt() constructor."
+    },
+    {
+      "id": "js-065",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "What is the difference between microtasks and macrotasks?",
+      "answer": "Microtasks (Promises, queueMicrotask) execute before macrotasks (setTimeout, setInterval). The event loop prioritizes microtasks."
+    },
+    {
+      "id": "js-066",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "What is the difference between var, let, and const scope?",
+      "answer": "var is function-scoped, let and const are block-scoped. const cannot be reassigned, but objects/arrays can have properties modified."
+    },
+    {
+      "id": "js-067",
+      "category": "Async",
+      "difficulty": "medium",
+      "question": "What is Promise.all()?",
+      "answer": "Promise.all() takes an array of Promises and returns a single Promise. It resolves when all Promises resolve or rejects if any Promise rejects."
+    },
+    {
+      "id": "js-068",
+      "category": "Async",
+      "difficulty": "medium",
+      "question": "What is Promise.race()?",
+      "answer": "Promise.race() returns a Promise that resolves or rejects as soon as the first Promise in the array settles."
+    },
+    {
+      "id": "js-069",
+      "category": "Async",
+      "difficulty": "medium",
+      "question": "What is Promise.allSettled()?",
+      "answer": "Promise.allSettled() returns a Promise that resolves after all Promises settle, regardless of success or failure. It returns an array of results."
+    },
+    {
+      "id": "js-070",
+      "category": "Async",
+      "difficulty": "medium",
+      "question": "What is Promise.any()?",
+      "answer": "Promise.any() returns a Promise that resolves as soon as any Promise in the array resolves. It rejects only if all Promises reject."
+    },
+    {
+      "id": "js-071",
+      "category": "DOM",
+      "difficulty": "medium",
+      "question": "What is querySelector?",
+      "answer": "querySelector() selects the first element matching a CSS selector. querySelectorAll() returns all matching elements."
+    },
+    {
+      "id": "js-072",
+      "category": "DOM",
+      "difficulty": "medium",
+      "question": "What is addEventListener?",
+      "answer": "addEventListener() attaches an event handler to an element. It allows multiple handlers and supports event capturing and bubbling."
+    },
+    {
+      "id": "js-073",
+      "category": "DOM",
+      "difficulty": "medium",
+      "question": "What is preventDefault?",
+      "answer": "preventDefault() stops the default action of an event. For example, it prevents form submission or link navigation."
+    },
+    {
+      "id": "js-074",
+      "category": "DOM",
+      "difficulty": "medium",
+      "question": "What is stopPropagation?",
+      "answer": "stopPropagation() prevents an event from bubbling up to parent elements. It doesn't prevent other handlers on the same element."
+    },
+    {
+      "id": "js-075",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the ternary operator?",
+      "answer": "The ternary operator (condition ? trueValue : falseValue) is a shorthand for if-else statements. It returns one of two values based on a condition."
+    },
+    {
+      "id": "js-076",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the optional chaining operator?",
+      "answer": "The optional chaining operator (?.) safely accesses nested properties. It returns undefined if the property doesn't exist instead of throwing an error."
+    },
+    {
+      "id": "js-077",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the nullish coalescing operator?",
+      "answer": "The nullish coalescing operator (??) returns the right operand if the left is null or undefined. It differs from || which treats falsy values."
+    },
+    {
+      "id": "js-078",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is logical AND (&&)?",
+      "answer": "&& returns the first falsy value or the last value if all are truthy. It's useful for conditional execution and short-circuit evaluation."
+    },
+    {
+      "id": "js-079",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is logical OR (||)?",
+      "answer": "|| returns the first truthy value or the last value if all are falsy. It's commonly used for default values."
+    },
+    {
+      "id": "js-080",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the logical NOT (!)?",
+      "answer": "! negates a boolean value. It converts a value to boolean and inverts it. !! converts any value to its boolean equivalent."
+    },
+    {
+      "id": "js-081",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "What is the difference between == and ===?",
+      "answer": "== performs type coercion, so 5 == '5' is true. === compares both value and type, so 5 === '5' is false. Always use ===."
+    },
+    {
+      "id": "js-082",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "What is the difference between Object.create and new?",
+      "answer": "Object.create() creates an object with a specified prototype without calling a constructor. new creates an instance and calls the constructor function."
+    },
+    {
+      "id": "js-083",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "What is the difference between Array.from and spread operator?",
+      "answer": "Array.from() converts array-like objects to arrays and accepts a mapping function. Spread operator (...) works with iterables and is more concise."
+    },
+    {
+      "id": "js-084",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "What is the difference between isNaN and Number.isNaN?",
+      "answer": "isNaN() coerces the value to a number first, so isNaN('abc') is true. Number.isNaN() only returns true for actual NaN values."
+    },
+    {
+      "id": "js-085",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "What is the difference between parseInt and parseFloat?",
+      "answer": "parseInt() parses a string and returns an integer. parseFloat() parses a string and returns a floating-point number."
+    },
+    {
+      "id": "js-086",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the isFinite function?",
+      "answer": "isFinite() checks if a value is a finite number. It returns false for Infinity, -Infinity, and NaN."
+    },
+    {
+      "id": "js-087",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the isInteger function?",
+      "answer": "Number.isInteger() checks if a value is an integer. It returns true only for whole numbers, not for strings or decimals."
+    },
+    {
+      "id": "js-088",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the toFixed method?",
+      "answer": "toFixed() returns a string representation of a number with a specified number of decimal places. It rounds the number if necessary."
+    },
+    {
+      "id": "js-089",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the toString method?",
+      "answer": "toString() converts a value to a string representation. For numbers, it can accept a radix parameter to convert to different bases."
+    },
+    {
+      "id": "js-090",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the charAt method?",
+      "answer": "charAt() returns the character at a specified index in a string. It returns an empty string if the index is out of range."
+    },
+    {
+      "id": "js-091",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the substring method?",
+      "answer": "substring() returns a portion of a string between two indices. It doesn't modify the original string and swaps indices if start > end."
+    },
+    {
+      "id": "js-092",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the substr method?",
+      "answer": "substr() returns a portion of a string starting at an index for a specified length. It's deprecated in favor of substring() or slice()."
+    },
+    {
+      "id": "js-093",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the split method?",
+      "answer": "split() divides a string into an array of substrings based on a separator. It doesn't modify the original string."
+    },
+    {
+      "id": "js-094",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the join method?",
+      "answer": "join() combines array elements into a single string with a specified separator. It's the opposite of split()."
+    },
+    {
+      "id": "js-095",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the trim method?",
+      "answer": "trim() removes whitespace from both ends of a string. It doesn't modify the original string."
+    },
+    {
+      "id": "js-096",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the toLowerCase method?",
+      "answer": "toLowerCase() converts a string to lowercase. It doesn't modify the original string."
+    },
+    {
+      "id": "js-097",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the toUpperCase method?",
+      "answer": "toUpperCase() converts a string to uppercase. It doesn't modify the original string."
+    },
+    {
+      "id": "js-098",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the replace method?",
+      "answer": "replace() returns a new string with the first match of a pattern replaced. It doesn't modify the original string."
+    },
+    {
+      "id": "js-099",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the replaceAll method?",
+      "answer": "replaceAll() returns a new string with all matches of a pattern replaced. It's useful for replacing all occurrences without regex."
+    },
+    {
+      "id": "js-100",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "What is the difference between Object.defineProperty and assignment?",
+      "answer": "Object.defineProperty() allows defining property descriptors like writable, enumerable, and configurable. Direct assignment doesn't provide this control."
+    }
+  ]
+}

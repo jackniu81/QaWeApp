@@ -1,0 +1,704 @@
+{
+  "questions": [
+    {
+      "id": "react-001",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is JSX?",
+      "answer": "JSX is a syntax extension for JavaScript that allows you to write HTML-like code in JavaScript. It gets compiled to React.createElement() calls."
+    },
+    {
+      "id": "react-002",
+      "category": "Hooks",
+      "difficulty": "medium",
+      "question": "What is the useState hook?",
+      "answer": "useState is a React hook that allows you to add state to functional components. It returns an array with the current state and a function to update it."
+    },
+    {
+      "id": "react-003",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the difference between props and state?",
+      "answer": "Props are read-only data passed from parent to child components. State is mutable data managed within a component that can change over time."
+    },
+    {
+      "id": "react-004",
+      "category": "Hooks",
+      "difficulty": "medium",
+      "question": "What is the useEffect hook?",
+      "answer": "useEffect is a hook that lets you perform side effects in functional components. It runs after render and can replace lifecycle methods like componentDidMount."
+    },
+    {
+      "id": "react-005",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "What is the virtual DOM?",
+      "answer": "The virtual DOM is a lightweight JavaScript representation of the real DOM. React uses it to optimize updates by comparing changes and only updating necessary parts."
+    },
+    {
+      "id": "react-006",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is a React component?",
+      "answer": "A React component is a reusable piece of UI that returns JSX. It can be a function or class that accepts props and returns elements to render."
+    },
+    {
+      "id": "react-007",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "What is the Context API?",
+      "answer": "Context API allows you to pass data through the component tree without manually passing props at every level. It's useful for global state management."
+    },
+    {
+      "id": "react-008",
+      "category": "Performance",
+      "difficulty": "medium",
+      "question": "What is React.memo?",
+      "answer": "React.memo is a higher-order component that memoizes a component, preventing re-renders if props haven't changed. It's useful for performance optimization."
+    },
+    {
+      "id": "react-009",
+      "category": "Hooks",
+      "difficulty": "medium",
+      "question": "What is the useContext hook?",
+      "answer": "useContext is a hook that allows you to consume values from a Context without nesting. It simplifies accessing context values in functional components."
+    },
+    {
+      "id": "react-010",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "What is the difference between controlled and uncontrolled components?",
+      "answer": "Controlled components have their state managed by React through props. Uncontrolled components manage their own state using refs."
+    },
+    {
+      "id": "react-011",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is a key prop in React lists?",
+      "answer": "The key prop helps React identify which items have changed. It should be unique and stable to ensure correct updates and maintain component state."
+    },
+    {
+      "id": "react-012",
+      "category": "Hooks",
+      "difficulty": "medium",
+      "question": "What is the useReducer hook?",
+      "answer": "useReducer is a hook for managing complex state logic. It takes a reducer function and initial state, and returns the current state and a dispatch function."
+    },
+    {
+      "id": "react-013",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is a functional component?",
+      "answer": "A functional component is a JavaScript function that returns JSX. It's the modern way to create React components and supports hooks."
+    },
+    {
+      "id": "react-014",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is a class component?",
+      "answer": "A class component extends React.Component and uses lifecycle methods. It's the older way to create components but still supported."
+    },
+    {
+      "id": "react-015",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the difference between functional and class components?",
+      "answer": "Functional components are simpler and support hooks. Class components have lifecycle methods and this binding. Functional components are preferred."
+    },
+    {
+      "id": "react-016",
+      "category": "Hooks",
+      "difficulty": "medium",
+      "question": "What is the useRef hook?",
+      "answer": "useRef creates a mutable reference that persists across renders. It's useful for accessing DOM elements directly or storing mutable values."
+    },
+    {
+      "id": "react-017",
+      "category": "Hooks",
+      "difficulty": "medium",
+      "question": "What is the useCallback hook?",
+      "answer": "useCallback memoizes a function so it only changes if dependencies change. It's useful for optimizing performance when passing callbacks to child components."
+    },
+    {
+      "id": "react-018",
+      "category": "Hooks",
+      "difficulty": "medium",
+      "question": "What is the useMemo hook?",
+      "answer": "useMemo memoizes a computed value so it's only recalculated if dependencies change. It's useful for expensive computations."
+    },
+    {
+      "id": "react-019",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "What is a custom hook?",
+      "answer": "A custom hook is a JavaScript function that uses other hooks. It allows sharing stateful logic between components."
+    },
+    {
+      "id": "react-020",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "What is the Rules of Hooks?",
+      "answer": "Rules of Hooks: 1) Only call hooks at the top level, 2) Only call hooks from React functions. Breaking these rules causes bugs."
+    },
+    {
+      "id": "react-021",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is lifting state up?",
+      "answer": "Lifting state up means moving state to a common parent component. It allows sharing state between sibling components."
+    },
+    {
+      "id": "react-022",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is conditional rendering?",
+      "answer": "Conditional rendering displays different content based on conditions. It uses if statements, ternary operators, or logical operators."
+    },
+    {
+      "id": "react-023",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is list rendering?",
+      "answer": "List rendering displays multiple items from an array. It uses map() to create elements and requires unique key props."
+    },
+    {
+      "id": "react-024",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is form handling in React?",
+      "answer": "Form handling manages input values and submissions. Controlled components use state to manage input values."
+    },
+    {
+      "id": "react-025",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is a controlled component?",
+      "answer": "A controlled component has its value controlled by React state. The value is updated through onChange handlers."
+    },
+    {
+      "id": "react-026",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is an uncontrolled component?",
+      "answer": "An uncontrolled component manages its own state using refs. The value is accessed directly from the DOM."
+    },
+    {
+      "id": "react-027",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "What is the difference between shallow and deep rendering?",
+      "answer": "Shallow rendering renders only the component without children. Deep rendering renders the entire component tree."
+    },
+    {
+      "id": "react-028",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "What is reconciliation in React?",
+      "answer": "Reconciliation is React's algorithm for updating the DOM. It compares the virtual DOM with the previous version and updates only changed parts."
+    },
+    {
+      "id": "react-029",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "What is the diffing algorithm?",
+      "answer": "The diffing algorithm compares two versions of the virtual DOM. It identifies changes and updates the real DOM efficiently."
+    },
+    {
+      "id": "react-030",
+      "category": "Performance",
+      "difficulty": "medium",
+      "question": "What is lazy loading in React?",
+      "answer": "Lazy loading defers loading components until they're needed. It uses React.lazy() and Suspense for code splitting."
+    },
+    {
+      "id": "react-031",
+      "category": "Performance",
+      "difficulty": "medium",
+      "question": "What is code splitting?",
+      "answer": "Code splitting divides code into smaller chunks loaded on demand. It improves initial load time and performance."
+    },
+    {
+      "id": "react-032",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "What is a higher-order component (HOC)?",
+      "answer": "A HOC is a function that takes a component and returns an enhanced component. It's used for code reuse and logic abstraction."
+    },
+    {
+      "id": "react-033",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "What is render props pattern?",
+      "answer": "Render props is a technique where a component receives a function as a prop that returns JSX. It's an alternative to HOCs."
+    },
+    {
+      "id": "react-034",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the Fragment component?",
+      "answer": "Fragment allows returning multiple elements without a wrapper div. It's useful for avoiding unnecessary DOM nodes."
+    },
+    {
+      "id": "react-035",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the StrictMode component?",
+      "answer": "StrictMode highlights potential problems in development. It doesn't render anything in production."
+    },
+    {
+      "id": "react-036",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the Suspense component?",
+      "answer": "Suspense allows components to suspend rendering while loading. It works with lazy() for code splitting."
+    },
+    {
+      "id": "react-037",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "What is error boundary?",
+      "answer": "Error boundary catches JavaScript errors in child components. It prevents the entire app from crashing."
+    },
+    {
+      "id": "react-038",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is prop drilling?",
+      "answer": "Prop drilling passes props through multiple levels of components. It can be avoided using Context API or state management libraries."
+    },
+    {
+      "id": "react-039",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "What is the difference between state and props?",
+      "answer": "Props are read-only data from parent components. State is mutable data managed within a component."
+    },
+    {
+      "id": "react-040",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the useLayoutEffect hook?",
+      "answer": "useLayoutEffect runs synchronously after DOM mutations. It's useful for measuring DOM elements."
+    },
+    {
+      "id": "react-041",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "What is the difference between useEffect and useLayoutEffect?",
+      "answer": "useEffect runs asynchronously after render. useLayoutEffect runs synchronously before paint."
+    },
+    {
+      "id": "react-042",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the useImperativeHandle hook?",
+      "answer": "useImperativeHandle customizes the instance value exposed by a ref. It's useful for exposing specific methods."
+    },
+    {
+      "id": "react-043",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the useDebugValue hook?",
+      "answer": "useDebugValue displays a label for a custom hook in React DevTools. It's useful for debugging."
+    },
+    {
+      "id": "react-044",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the useDeferredValue hook?",
+      "answer": "useDeferredValue defers updating a value. It's useful for keeping the UI responsive during heavy computations."
+    },
+    {
+      "id": "react-045",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the useTransition hook?",
+      "answer": "useTransition marks updates as non-urgent. It allows keeping the UI responsive during slow updates."
+    },
+    {
+      "id": "react-046",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the useId hook?",
+      "answer": "useId generates unique IDs for accessibility. It's useful for form labels and ARIA attributes."
+    },
+    {
+      "id": "react-047",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the useSyncExternalStore hook?",
+      "answer": "useSyncExternalStore subscribes to external stores. It's useful for integrating with external state management."
+    },
+    {
+      "id": "react-048",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the useInsertionEffect hook?",
+      "answer": "useInsertionEffect runs before useLayoutEffect. It's useful for CSS-in-JS libraries."
+    },
+    {
+      "id": "react-049",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is event handling in React?",
+      "answer": "Event handling uses camelCase event names like onClick. Event handlers receive a synthetic event object."
+    },
+    {
+      "id": "react-050",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the difference between HTML and React events?",
+      "answer": "React events use camelCase and pass synthetic events. HTML events use lowercase and pass native events."
+    },
+    {
+      "id": "react-051",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "What is event pooling?",
+      "answer": "Event pooling reuses synthetic event objects for performance. It was removed in React 17."
+    },
+    {
+      "id": "react-052",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the defaultValue attribute?",
+      "answer": "defaultValue sets the initial value of an uncontrolled input. It's only used when the component mounts."
+    },
+    {
+      "id": "react-053",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the dangerouslySetInnerHTML prop?",
+      "answer": "dangerouslySetInnerHTML sets HTML content directly. It's dangerous and should only be used with trusted content."
+    },
+    {
+      "id": "react-054",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the className attribute?",
+      "answer": "className sets CSS classes on elements. It's the React equivalent of the HTML class attribute."
+    },
+    {
+      "id": "react-055",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the style prop?",
+      "answer": "The style prop accepts a JavaScript object with camelCase property names. It's useful for dynamic styling."
+    },
+    {
+      "id": "react-056",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the children prop?",
+      "answer": "The children prop contains the content between opening and closing tags. It allows creating wrapper components."
+    },
+    {
+      "id": "react-057",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is prop validation?",
+      "answer": "Prop validation checks that props have the correct type. PropTypes library provides runtime validation."
+    },
+    {
+      "id": "react-058",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is TypeScript in React?",
+      "answer": "TypeScript adds static type checking to React. It helps catch errors and improves code quality."
+    },
+    {
+      "id": "react-059",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "What is the difference between controlled and uncontrolled inputs?",
+      "answer": "Controlled inputs have values managed by state. Uncontrolled inputs manage their own values using refs."
+    },
+    {
+      "id": "react-060",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the onChange event?",
+      "answer": "onChange fires when an input value changes. It's used to update state in controlled components."
+    },
+    {
+      "id": "react-061",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the onSubmit event?",
+      "answer": "onSubmit fires when a form is submitted. It's used to handle form submission logic."
+    },
+    {
+      "id": "react-062",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the onFocus event?",
+      "answer": "onFocus fires when an element receives focus. It's useful for handling focus-related logic."
+    },
+    {
+      "id": "react-063",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the onBlur event?",
+      "answer": "onBlur fires when an element loses focus. It's useful for validation and cleanup."
+    },
+    {
+      "id": "react-064",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the onClick event?",
+      "answer": "onClick fires when an element is clicked. It's the most common event handler in React."
+    },
+    {
+      "id": "react-065",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the onMouseEnter event?",
+      "answer": "onMouseEnter fires when the mouse enters an element. It's useful for hover effects."
+    },
+    {
+      "id": "react-066",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the onMouseLeave event?",
+      "answer": "onMouseLeave fires when the mouse leaves an element. It's useful for removing hover effects."
+    },
+    {
+      "id": "react-067",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the onKeyDown event?",
+      "answer": "onKeyDown fires when a key is pressed. It's useful for keyboard shortcuts."
+    },
+    {
+      "id": "react-068",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the onKeyUp event?",
+      "answer": "onKeyUp fires when a key is released. It's useful for detecting key releases."
+    },
+    {
+      "id": "react-069",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the onKeyPress event?",
+      "answer": "onKeyPress fires when a key is pressed and released. It's deprecated in favor of onKeyDown/onKeyUp."
+    },
+    {
+      "id": "react-070",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the onScroll event?",
+      "answer": "onScroll fires when an element is scrolled. It's useful for infinite scrolling."
+    },
+    {
+      "id": "react-071",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the onWheel event?",
+      "answer": "onWheel fires when the mouse wheel is used. It's useful for custom scroll behavior."
+    },
+    {
+      "id": "react-072",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the onLoad event?",
+      "answer": "onLoad fires when an element finishes loading. It's useful for images and iframes."
+    },
+    {
+      "id": "react-073",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the onError event?",
+      "answer": "onError fires when an element fails to load. It's useful for error handling."
+    },
+    {
+      "id": "react-074",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the onDrag event?",
+      "answer": "onDrag fires while an element is being dragged. It's useful for drag and drop."
+    },
+    {
+      "id": "react-075",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the onDrop event?",
+      "answer": "onDrop fires when a dragged element is dropped. It's useful for drop zones."
+    },
+    {
+      "id": "react-076",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the onTouchStart event?",
+      "answer": "onTouchStart fires when a touch begins. It's useful for touch interactions."
+    },
+    {
+      "id": "react-077",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the onTouchEnd event?",
+      "answer": "onTouchEnd fires when a touch ends. It's useful for touch interactions."
+    },
+    {
+      "id": "react-078",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the onTouchMove event?",
+      "answer": "onTouchMove fires while a touch moves. It's useful for tracking touch movement."
+    },
+    {
+      "id": "react-079",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the onContextMenu event?",
+      "answer": "onContextMenu fires when the right-click context menu appears. It's useful for custom menus."
+    },
+    {
+      "id": "react-080",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the onDoubleClick event?",
+      "answer": "onDoubleClick fires when an element is double-clicked. It's useful for double-click actions."
+    },
+    {
+      "id": "react-081",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "What is the difference between React and ReactDOM?",
+      "answer": "React provides component logic. ReactDOM renders components to the DOM."
+    },
+    {
+      "id": "react-082",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "What is React.StrictMode?",
+      "answer": "StrictMode highlights potential problems in development. It checks for unsafe lifecycles and side effects."
+    },
+    {
+      "id": "react-083",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "What is React.Profiler?",
+      "answer": "Profiler measures component rendering performance. It's useful for identifying performance bottlenecks."
+    },
+    {
+      "id": "react-084",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "What is the difference between React.memo and useMemo?",
+      "answer": "React.memo memoizes a component. useMemo memoizes a value."
+    },
+    {
+      "id": "react-085",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "What is the difference between React.lazy and dynamic imports?",
+      "answer": "React.lazy is a wrapper for dynamic imports. It works with Suspense for code splitting."
+    },
+    {
+      "id": "react-086",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the ReactDOM.createRoot method?",
+      "answer": "createRoot creates a root to render React components. It's the new API in React 18."
+    },
+    {
+      "id": "react-087",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the ReactDOM.render method?",
+      "answer": "render renders a component into the DOM. It's deprecated in React 18 in favor of createRoot."
+    },
+    {
+      "id": "react-088",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the ReactDOM.unmountComponentAtNode method?",
+      "answer": "unmountComponentAtNode removes a component from the DOM. It's deprecated in React 18."
+    },
+    {
+      "id": "react-089",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the ReactDOM.createPortal method?",
+      "answer": "createPortal renders a component outside its parent DOM node. It's useful for modals and tooltips."
+    },
+    {
+      "id": "react-090",
+      "category": "Fundamentals",
+      "difficulty": "easy",
+      "question": "What is the ReactDOM.flushSync method?",
+      "answer": "flushSync forces synchronous updates. It's useful for testing and specific use cases."
+    },
+    {
+      "id": "react-091",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "What is the difference between React 17 and React 18?",
+      "answer": "React 18 introduces concurrent rendering, automatic batching, and new hooks. It improves performance and user experience."
+    },
+    {
+      "id": "react-092",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "What is concurrent rendering?",
+      "answer": "Concurrent rendering allows React to interrupt rendering. It improves responsiveness for large updates."
+    },
+    {
+      "id": "react-093",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "What is automatic batching?",
+      "answer": "Automatic batching groups multiple state updates into one render. It improves performance."
+    },
+    {
+      "id": "react-094",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "What is the difference between flushSync and batching?",
+      "answer": "flushSync forces immediate updates. Batching groups updates for better performance."
+    },
+    {
+      "id": "react-095",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "What is the startTransition API?",
+      "answer": "startTransition marks updates as non-urgent. It allows keeping the UI responsive."
+    },
+    {
+      "id": "react-096",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "What is the difference between startTransition and useTransition?",
+      "answer": "startTransition is a function. useTransition is a hook that returns isPending and startTransition."
+    },
+    {
+      "id": "react-097",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "What is the Suspense API?",
+      "answer": "Suspense allows components to suspend rendering while loading. It works with lazy() and async components."
+    },
+    {
+      "id": "react-098",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "What is the difference between Suspense and error boundary?",
+      "answer": "Suspense handles loading states. Error boundary handles errors."
+    },
+    {
+      "id": "react-099",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "What is the difference between React and Next.js?",
+      "answer": "React is a library for building UIs. Next.js is a framework that adds routing, SSR, and other features."
+    },
+    {
+      "id": "react-100",
+      "category": "Advanced",
+      "difficulty": "hard",
+      "question": "What is the difference between React and Vue?",
+      "answer": "React uses JSX and is more flexible. Vue uses templates and is more opinionated. Both are popular frameworks."
+    }
+  ]
+}
